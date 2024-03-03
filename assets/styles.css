@@ -1,0 +1,212 @@
+:root {
+  --background-color: #e5f1fd;
+  --border-color: #3f3c3c;
+  --link-color1: rgb(83, 42, 44);
+  --link-color2: rgb(146, 122, 123);
+  --btn-color1: rgb(140, 209, 236);
+  --btn-color2: rgb(92, 195, 236);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background-color);
+  color: #3f3c3c;
+  margin: 1em 18em 1em;
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 2.4em;
+  font-weight: bold;
+}
+
+section {
+  margin-top: 1.2em;
+}
+
+section > label {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+nav {
+  padding-top: 0.5em;
+  padding-left: 1.2em;
+}
+
+ul {
+  display: flex;
+  column-gap: 35px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a {
+  font-weight: bold;
+  color: var(--link-color1);
+}
+
+a:hover,
+a:focus {
+  color: var(--link-color2);
+}
+
+form {
+  padding-top: 0.5em;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.card {
+  position: relative;
+  border-radius: 0.3em;
+  border: 1px solid var(--border-color);
+}
+
+.card > div {
+  display: flex;
+  flex-direction: column;
+  padding: 1.4em 0.8em;
+  row-gap: 10px;
+}
+
+.card > label {
+  position: absolute;
+  top: -1.2vh;
+  left: 1.8vw;
+  background-color: var(--background-color);
+}
+
+.card-item {
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 1em;
+}
+
+.card-item-col {
+  flex-direction: column;
+  row-gap: 0.1em;
+  justify-content: flex-start;
+}
+
+.card-item-lin {
+  flex-direction: row;
+  column-gap: 0.2em;
+  align-items: flex-end;
+}
+
+input[name="email"],
+.textbox {
+  width: 25vw;
+}
+
+input[name="password"] {
+  width: 15vw;
+}
+
+.card span {
+  font-size: 0.85em;
+  font-style: italic;
+}
+
+.btn {
+  margin-top: 0.8vh;
+  font-size: 0.9em;
+  border: 1px solid var(--border-color);
+  border-radius: 0.3em;
+  height: 3.5vh;
+  background-color: var(--btn-color1);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--btn-color2);
+}
+
+.compra-content {
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 5px;
+  row-gap: 10px;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: 22% 13% 14% 26% auto;
+}
+
+.produto-content {
+  display: grid;
+  grid-template-columns: 20% 70% auto;
+}
+
+.text-info {
+  border: none;
+  background-color: var(--background-color);
+  font-size: 0.95em;
+}
+
+input[type="image"] {
+  width: 130px;
+}
+input.text-info {
+  width: 60px;
+}
+
+.card-item .title-prod {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.card-collapse {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.card-collapse > div {
+  padding: 0.5em 0 1em;
+}
+summary {
+  padding-bottom: 0.5em;
+}
+
+.detalhe-pagamento {
+  display: grid;
+  grid-template-columns: 42% 40% auto;
+}
+
+.detail-pgto {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.detail-pgto .title {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.detail-pgto .title,
+.detail-pgto strong {
+  font-weight: bold;
+}
+
+.card-group-avaliacao .title {
+  font-weight: bold;
+}
+
+.group-item-col{
+  row-gap: 0.8em;
+}
+
+.input-data-compra{
+  width: 8.5vw;
+}
+.txt-area{
+  width: 22vw;
+}
+

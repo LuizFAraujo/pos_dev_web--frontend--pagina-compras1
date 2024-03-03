@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>COMPRAS</title>
+</head>
+
+<body>
+    <h1>Meus Pedidos</h1>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#dados">Meus dados</a></li>
+            <li><a href="#compras">Minhas compras</a></li>
+            <li><a href="#avaliar">Avaliar produto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="dados">
+            <label>Meus Dados</label>
+
+            <form action="" method="get" class="">
+
+                <div class="card">
+                    <label>Dados da conta</label>
+                    <div>
+                        <div class="card-item card-item-col">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" placeholder="seu-email@email.com" required />
+                        </div>
+                        <div class="card-item card-item-col">
+                            <label for="password">Senha</label>
+                            <input type="password" name="password" id="password" placeholder="Use uma senha forte..." />
+                        </div>
+                        <div class="card-item card-item-lin">
+                            <input type="checkbox" id="scales" name="scales" />
+                            <label for="scales">Desejo receber e-mails promocionais</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <label>Dados pessoais</label>
+                    <div>
+                        <div class="card-item card-item-col">
+                            <label for="nome">Nome Completo</label>
+                            <input class="textbox" type="text" name="nome" id="nome" placeholder="Seu nome aqui..." />
+                        </div>
+                        <div class="card-item card-item-col">
+                            <label for="apelido">Como gostaria de ser chamado? <span>(opcional)</span></label>
+                            <input class="textbox" type="text" name="apelido" id="apelido" placeholder="Apelido..." />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="">
+                    <input class="btn" type="submit" value="Salvar alterações" />
+                </div>
+
+            </form>
+        </section>
+
+        <section id="compras">
+            <label>Minhas compras</label>
+            <form action="" method="" class="">
+
+                <div class="card">
+                    <div>
+                        <div class="compra-content">
+                            <div class="card-item card-item-col">
+                                <label for="numPedido">Número do pedido</label>
+                                <input class="text-info" id="numPedido" type="text" value="37945982" readonly>
+                            </div>
+                            <div class="card-item card-item-col">
+                                <label for="statusPedido">Senha</label>
+                                <input class="text-info" id="statusPedido" type="text" value="Concluído" readonly>
+                            </div>
+                            <div class="card-item card-item-col">
+                                <label for="dataCompra">Data</label>
+                                <input class="text-info" id="dataCompra" type="text" value="12/12/2020" readonly>
+                            </div>
+                            <div class="card-item card-item-col">
+                                <label for="formaPagamento">Forma de Pagamento</label>
+                                <input class="text-info" id="formaPagamento" type="text" value="Cartão de Crédido" readonly>
+                            </div>
+                            <div class="card-item card-item-col">
+                                <label for="rastreioPedido">Acompanhamento</label>
+                                <input class="" id="rastreioPedido" type="button" value="Rastreio Detalhado">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="produto-content">
+                            <div class="card-item card-item-col">
+                                <input type="image" id="imgSMN500" alt="SMN500" src="./assets/SMN500.jpg" />
+                            </div>
+                            <div class="card-item card-item-col">
+                                <h2 class="title-prod">Suporte Articulado para Monitor e Notebook de 13 a 32 Vinik, Articulação Dupla - SMN500</h2>
+                                <input class="text-info" id="descProduto" type="text" value="Quantidade: 1" readonly>
+                                <a href="#avaliar">Avaliar produto</a>
+                            </div>
+                            <div class="card-item card-item-col">
+                                <label for="totalProduto">R$</label>
+                                <input class="text-info" id="totalProduto" type="text" value="99,90" readonly>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- <div class="card"> -->
+
+
+                <details class="card-collapse">
+                    <summary class="">Detalhes do pagamento e envio</summary>
+                    <div>
+
+
+                        <div class="detalhe-pagamento">
+
+                            <div class="card-item card-item-col detail-pgto">
+                                <h2 class="title">Endereço de entrega</h2>
+                                <h2>Avenida Estelita Falcão</h2>
+                                <h2>Número 12, Centro</h2>
+                                <h2>CEP 48170-970 - Água Fria/BA</h2>
+                            </div>
+                            <div class="card-item card-item-col detail-pgto">
+                                <h2 class="title">Forma de pagamento</h2>
+                                <h2>Cartão de crédito</h2>
+                                <h2>Master Card **** **** **** 1234</h2>
+                                <h2>Titular: João da Silva</h2>
+                            </div>
+                            <div class="card-item card-item-col detail-pgto">
+                                <h2 class="title">Frete</h2>
+                                <h2>15,52</h2>
+                                <h2>Enviado por <strong>GFL</strong></h2>
+                                <h2>Entregue</h2>
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+                </details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- <div>
+                        <div class="produto-content">
+                            <div class="card-item card-item-col">
+                                <input type="image" id="imgSMN500" alt="SMN500" src="./assets/SMN500.jpg" />
+                            </div>
+                            <div class="card-item card-item-col">
+                                <h2>Suporte Articulado para Monitor e Notebook de 13 a 32 Vinik, Articulação Dupla - SMN500</h2>
+                                <input class="text-info" id="descProduto" type="text" value="Quantidade: 1" readonly>
+                                <a href="#avaliar">Avaliar produto</a>
+                            </div>
+                            <div class="card-item card-item-col">
+                                <label for="totalProduto">R$</label>
+                                <input class="text-info" id="totalProduto" type="text" value="99,90" readonly>
+                            </div>
+                        </div>
+                    </div> -->
+                <!-- </div> -->
+
+
+
+
+
+
+            </form>
+        </section>
+
+
+
+
+
+
+
+
+
+        <section id="avaliar">
+            <label>Avaliação do produto</label>
+            <form action="" method="get" class="">
+
+                <div class="card">
+                    <label>Opinião sobre o produto</label>
+                    <div class="card-group-avaliacao">
+                        <div class="card-item card-item-col">
+                            <label class="title" for="color">Qual cor do produto mais te agrada?</label>
+                            <input type="color" class="input-color" name="color" id="color" value="#000" />
+                        </div>
+
+                        <div class="card-item card-item-col">
+                            <label class="title" for="">O produto é de qualidade?</label>
+                            <div>
+                                <input type="radio" id="concTotal" name="isProdQuality" value="concTotal" />
+                                <label for="concTotal">Concordo Totalmnente</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="concordo" name="isProdQuality" value="concordo" />
+                                <label for="concordo">Concordo</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="naoDecidi" name="isProdQuality" value="naoDecidi" />
+                                <label for="naoDecidi">Não estou decidido</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="discordo" name="isProdQuality" value="discordo" />
+                                <label for="discordo">Discordo</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="discordoTotal" name="isProdQuality" value="discordoTotal" />
+                                <label for="discordoTotal">Discordo Totalmente</label>
+                            </div>
+                        </div>
+
+                        <div class="card-item card-item-col">
+                            <label class="title" for="">Para você, quais parâmetros são mais importantes na qualidade do produto?</label>
+                            <div>
+                                <input type="checkbox" id="durabilidade" name="durabilidade" />
+                                <label for="durabilidade">Durabilidade</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="features" name="features" />
+                                <label for="features">Características acessórias ou Features</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="confiablilidade" name="confiablilidade" />
+                                <label for="confiablilidade">Confiablilidade</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="aparencia" name="aparencia" />
+                                <label for="aparencia">Aparência</label>
+                            </div>
+                        </div>
+
+                        <div class="card-item card-item-col">
+                            <label class="title" for="color">Descreva a característica que mais chamou sua atenção no produto</label>
+                            <input type="text" name="color" id="color" placeholder="Característica aqui..." />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <label>Condições atuais</label>
+                    <div class="card-group-avaliacao">
+                        <div class="card-item card-item-col group-item-col">
+                            <div class="card-item card-item-col">
+                                <label class="title" for="fotoAtual">Adicione uma foto atual do produto</label>
+                                <input type="file" id="fotoAtual" name="fotoAtual" accept="image/png, image/jpeg" />
+                            </div>
+                            <div class="card-item card-item-col">
+                                <label class="title" for="dataCompra">Data de compra</label>
+                                <input class="input-data-compra" type="date" id="dataCompra" name="dataCompra" value="2024-01-03" min="2000-01-01" max="2030-12-31" />
+                            </div>
+                            <div class="card-item card-item-col">
+                                <label class="title" for="txtArea">Adicione uma foto atual do produto</label>
+                                <textarea class="txt-area" id="w3review" name="txtArea" rows="4" cols="30"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="">
+                    <input class="btn" type="submit" value="Enviar avaliação" />
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
