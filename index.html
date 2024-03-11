@@ -86,7 +86,7 @@
                             </div>
                             <div class="card-item card-item-col">
                                 <label for="formaPagamento">Forma de Pagamento</label>
-                                <input class="text-info" id="formaPagamento" type="text" value="Cartão de Crédido" readonly>
+                                <input class="text-info" id="formaPagamento" type="text" value="Cartão de Crédito" readonly>
                             </div>
                             <div class="card-item card-item-col">
                                 <label for="rastreioPedido">Acompanhamento</label>
@@ -116,13 +116,10 @@
                 </div>
 
 
-                <!-- <div class="card"> -->
-
 
                 <details class="card-collapse">
                     <summary class="">Detalhes do pagamento e envio</summary>
                     <div>
-
 
                         <div class="detalhe-pagamento">
 
@@ -145,59 +142,13 @@
                                 <h2>Entregue</h2>
                             </div>
 
-
-
-
-
                         </div>
 
                     </div>
                 </details>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <!-- <div>
-                        <div class="produto-content">
-                            <div class="card-item card-item-col">
-                                <input type="image" id="imgSMN500" alt="SMN500" src="./assets/SMN500.jpg" />
-                            </div>
-                            <div class="card-item card-item-col">
-                                <h2>Suporte Articulado para Monitor e Notebook de 13 a 32 Vinik, Articulação Dupla - SMN500</h2>
-                                <input class="text-info" id="descProduto" type="text" value="Quantidade: 1" readonly>
-                                <a href="#avaliar">Avaliar produto</a>
-                            </div>
-                            <div class="card-item card-item-col">
-                                <label for="totalProduto">R$</label>
-                                <input class="text-info" id="totalProduto" type="text" value="99,90" readonly>
-                            </div>
-                        </div>
-                    </div> -->
-                <!-- </div> -->
-
-
-
-
-
-
             </form>
         </section>
-
-
-
-
-
-
 
 
 
@@ -210,7 +161,16 @@
                     <div class="card-group-avaliacao">
                         <div class="card-item card-item-col">
                             <label class="title" for="color">Qual cor do produto mais te agrada?</label>
-                            <input type="color" class="input-color" name="color" id="color" value="#000" />
+                            <input type="color" value="#000000" list="colors" class="input-color" name="color" id="color" />
+                            <datalist id="colors">
+                                <option>#ff0000</option>
+                                <option>#0000ff</option>
+                                <option>#00ff00</option>
+                                <option>#ffff00</option>
+                                <option>#00ffff</option>
+                            </datalist>
+
+
                         </div>
 
                         <div class="card-item card-item-col">

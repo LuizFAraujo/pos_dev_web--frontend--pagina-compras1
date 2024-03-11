@@ -1,18 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Nosifer&display=swap");
+
 :root {
-  --background-color: #e5f1fd;
+  --background-color: #eeecec;
   --border-color: #3f3c3c;
   --link-color1: rgb(83, 42, 44);
   --link-color2: rgb(146, 122, 123);
-  --btn-color1: rgb(140, 209, 236);
-  --btn-color2: rgb(92, 195, 236);
+  --btn-color1: #75a4c7;
+  --btn-color2: #4684b3;
 }
 
 html {
+  font-family: Roboto, Lato, sans-serif;
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   background-color: var(--background-color);
   color: #3f3c3c;
   margin: 1em 18em 1em;
@@ -20,12 +29,16 @@ body {
 }
 
 h1 {
+  font-family: "Nosifer", sans-serif;
   font-size: 2.4em;
   font-weight: bold;
+  text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+  padding-top: 0.5rem;
 }
 
 section {
-  margin-top: 1.2em;
+  margin-top: 1.2rem;
+  
 }
 
 section > label {
@@ -34,8 +47,8 @@ section > label {
 }
 
 nav {
-  padding-top: 0.5em;
-  padding-left: 1.2em;
+  padding-top: 1.2rem;
+  padding-left: 1.5rem;
 }
 
 ul {
@@ -61,26 +74,28 @@ form {
   padding-top: 0.5em;
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
+  row-gap: 1.1rem;
 }
 
 .card {
   position: relative;
   border-radius: 0.3em;
   border: 1px solid var(--border-color);
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  background-color: #e5e5e5;
 }
 
 .card > div {
   display: flex;
   flex-direction: column;
   padding: 1.4em 0.8em;
-  row-gap: 10px;
+  row-gap: 1rem;
 }
 
 .card > label {
   position: absolute;
-  top: -1.2vh;
-  left: 1.8vw;
+  top: -0.5rem;
+  left: 1.2rem;
   background-color: var(--background-color);
 }
 
@@ -104,11 +119,11 @@ form {
 
 input[name="email"],
 .textbox {
-  width: 25vw;
+  width: 22rem;
 }
 
 input[name="password"] {
-  width: 15vw;
+  width: 22rem;
 }
 
 .card span {
@@ -117,11 +132,11 @@ input[name="password"] {
 }
 
 .btn {
-  margin-top: 0.8vh;
+  margin-top: 0.2rem;
   font-size: 0.9em;
   border: 1px solid var(--border-color);
-  border-radius: 0.3em;
-  height: 3.5vh;
+  border-radius: 0.4rem;
+  height: 2rem;
   background-color: var(--btn-color1);
 }
 
@@ -156,7 +171,7 @@ input[type="image"] {
   width: 130px;
 }
 input.text-info {
-  width: 60px;
+  width: 8rem;
 }
 
 .card-item .title-prod {
@@ -199,14 +214,13 @@ summary {
   font-weight: bold;
 }
 
-.group-item-col{
+.group-item-col {
   row-gap: 0.8em;
 }
 
-.input-data-compra{
-  width: 8.5vw;
+.input-data-compra {
+  width: 7rem;
 }
-.txt-area{
-  width: 22vw;
+.txt-area {
+  width: 22rem;
 }
-
